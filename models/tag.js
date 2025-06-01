@@ -1,8 +1,8 @@
-const mongoose = require('mongoose'); 
+  const mongoose = require('mongoose'); 
 
 const TagSchema = new mongoose.Schema({
   usuario: { type: mongoose.Schema.Types.ObjectId, ref: 'Usuario', required: true },
-  personaje: { type: mongoose.Schema.Types.ObjectId, ref: 'Personaje', required: true },
+  famoso: { type: mongoose.Schema.Types.ObjectId, ref: 'Famoso', required: true },
   comentario: String,
   fecha: { type: Date, default: Date.now },
   metodo: { type: String, enum: ['QR', 'Foto'] },

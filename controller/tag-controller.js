@@ -1,4 +1,4 @@
-const Tag = require('../models/Tag');
+const Tag = require('../models/tag');
 
 exports.crearTag = async (req, res) => {
   const tag = new Tag(req.body);
@@ -9,6 +9,6 @@ exports.crearTag = async (req, res) => {
 exports.obtenerTags = async (req, res) => {
   const tags = await Tag.find()
     .populate('usuario')
-    .populate('personaje');
+    .populate('famoso');
   res.json(tags);
 };

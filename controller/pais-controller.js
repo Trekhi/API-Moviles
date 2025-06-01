@@ -1,4 +1,4 @@
-const Pais = require('../models/Pais');
+const Pais = require('../models/pais');
 
 exports.crearPais = async (req, res) => {
   try {
