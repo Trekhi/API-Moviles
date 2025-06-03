@@ -1,4 +1,4 @@
-const Personaje = require('../models/Personaje');
+const Personaje = require('../models/personaje');
 
 exports.crearPersonaje = async (req, res) => {
   const personaje = new Personaje(req.body);

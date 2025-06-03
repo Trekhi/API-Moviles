@@ -1,4 +1,4 @@
-const Visita = require('../models/Visita');
+const Visita = require('../models/visita');
 
 exports.obtenerVisitas = async (req, res) => {
   const visitas = await Visita.find()

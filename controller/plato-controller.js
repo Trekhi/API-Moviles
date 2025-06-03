@@ -1,4 +1,4 @@
-const Plato = require('../models/Plato');
+const Plato = require('../models/plato');
 
 exports.crearPlato = async (req, res) => {
   const plato = new Plato(req.body);
